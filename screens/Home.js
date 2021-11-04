@@ -1,5 +1,6 @@
 import React, {useState}  from "react";
 import {StyleSheet, View, Text, Image, TouchableOpacity, ScrollView, FlatList, ImageBackground, } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
@@ -8,7 +9,44 @@ import * as Animatable from "react-native-animatable"
 
 export default function Home({navigation}) {
   
+    const [defaultRating, setdefaultRating] = useState(2)
+    const [maxRating, setmaxRating] =useState([1,2,3,4,5])
+    const starImgFilled = 'https://raw.githubusercontent.com/tranhonghan/images/main/star_filled.png'
+    const starImgCorner= 'https://raw.githubusercontent.com/tranhonghan/images/main/star_corner.png'
    
+    const CustomRatingBar =() => {
+        return(
+            
+            <View style={styles.customRatingBarStyle}>
+                {
+                    maxRating.map((item, key) => {
+                        return(
+                                <TouchableOpacity 
+                                activeOpacity={0.7}
+                                key={item}
+                                onPress={() => setdefaultRating(item)}
+                                >
+                                    <Image
+                                    style={styles.starImgStyle}
+                                    source={item <= defaultRating
+                                    ?{uri: starImgFilled}
+                                : {uri: starImgCorner}}
+                                    >
+    
+                                    </Image>
+    
+                                </TouchableOpacity>
+                                
+                        )
+                    })
+                }
+                <View>
+                 
+                </View>
+            </View>
+        );
+    }
+
     return (
 
             // Beginning the Homepage
@@ -35,11 +73,12 @@ export default function Home({navigation}) {
 
 
                             {/* First Item collection: CLOTHING */}
-            <Text style={styles.heads}>Clothing</Text>
+            
          <ScrollView style={styles.contentContainer}>
                     {/* <View style={styles.container}>  */}
                 
                             <View style={styles.box}>
+                            <Text style={styles.heads}>Clothing</Text>
                                 <View style={styles.inner}>
                                         {/* <View style={{flex: 1, flexDirection:"row", alignItems:"center", marginLeft:100}}>
                                     <AntDesign  name="hearto" size={24} color="black" />
@@ -59,120 +98,120 @@ export default function Home({navigation}) {
                                 }} source={require("../assets/bikey.jpg")}>
 
                                     </Image>
-
-                                    <Text style={{marginTop:10, marginLeft:13}}>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
                                       Clothing for purchase: 
                                     </Text>
-                                      <Text style={{marginTop:30,}}>hello</Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'blue',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
                                 </View>
+                                
                             </View>
+                            <View style={styles.box}>
+                            <Text style={styles.heads}>Clothing</Text>
+                                <View style={styles.inner}>
+                                        {/* <View style={{flex: 1, flexDirection:"row", alignItems:"center", marginLeft:100}}>
+                                    <AntDesign  name="hearto" size={24} color="black" />
+                                    </View>  */}
+                                    
+                                      
+                                       
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/bikey.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            
+                           
                            
 
-                           {/* Second Item Collection: FURNITURE */}
-
-                           <Text style={styles.heads}>Furniture</Text>
-                            
-                   
-                                <View style={styles.box}>
-                                    <View style={styles.inner}>
-                                        
-                                        
-                                        
-                                        
-                                        <Image  style={{
-                                                borderTopLeftRadius:30, 
-                                                borderBottomLeftRadius:30, 
-                                                borderBottomRightRadius:30,
-                                            marginTop:18,
-                                            borderTopRightRadius:30,
-                                        height:"70%",
-                                        width:140,
-                                        backgroundColor: "#D7CFCD"
-                                    }} source={require("../assets/furniture/brown.jpg")}>
-
-                                        </Image>
-
-                                        <Text style={{marginTop:10}}>
-                                        Furniture for sale
-                                        </Text>
-                                        
-                                    </View>
-                                </View>
-                                <View style={styles.box}>
-                                    <View style={styles.inner}>
-                                        
-                                        
-                                        
-                                        
-                                        <Image  style={{
-                                                borderTopLeftRadius:30, 
-                                                borderBottomLeftRadius:30, 
-                                                borderBottomRightRadius:30,
-                                            marginTop:18,
-                                            borderTopRightRadius:30,
-                                        height:"70%",
-                                        width:140,
-                                        backgroundColor: "#D7CFCD"
-                                    }} source={require("../assets/furniture/furn.jpg")}>
-
-                                        </Image>
-
-                                        <Text style={{marginTop:10}}>
-                                        hello world hello world hello ww world
-                                        </Text>
-                                        
-                                    </View>
-                                </View>
-                                <View style={styles.box}>
-                                    <View style={styles.inner}>
-                                        
-                                        
-                                        
-                                        
-                                        <Image  style={{
-                                                borderTopLeftRadius:30, 
-                                                borderBottomLeftRadius:30, 
-                                                borderBottomRightRadius:30,
-                                            marginTop:18,
-                                            borderTopRightRadius:30,
-                                        height:"70%",
-                                        width:140,
-                                        backgroundColor: "#D7CFCD"
-                                    }} source={require("../assets/furniture/sit.jpg")}>
-
-                                        </Image>
-
-                                        <Text style={{marginTop:10}}>
-                                        hello world hello world hello ww world
-                                        </Text>
-                                        
-                                    </View>
-                                </View>
-                                <View style={styles.box}>
-                                    <View style={styles.inner}>
-                                        
-                                        
-                                        
-                                        
-                                        <Image  style={{
-                                                borderTopLeftRadius:30, 
-                                                borderBottomLeftRadius:30, 
-                                                borderBottomRightRadius:30,
-                                            marginTop:18,
-                                            borderTopRightRadius:30,
-                                        height:"70%",
-                                        width:140,
-                                        backgroundColor: "#D7CFCD"
-                                    }} source={require("../assets/furniture/couch.jpg")}>
-
-                                        </Image>
-
-                                        <Text style={{marginTop:10}}>
-                                        hello world hello world hello ww world
-                                        </Text>
-                                        
-                                    </View>
-                                </View>
+                          
                            
                             
                    
@@ -211,14 +250,14 @@ const styles = StyleSheet.create({
   inner: {
     flex:1,
     backgroundColor: '#eee',
-    alignItems:'flex-start',
+    // alignItems:'flex-start',
     // justifyContent:'space-between',    
     borderTopRightRadius:30, 
     borderTopLeftRadius:30, 
     borderBottomLeftRadius:30, 
     borderBottomRightRadius:30,
     flexDirection: 'row',
-    flexWrap: 'wrap',
+    // flexWrap: 'wrap',
     // borderBottomColor:'green',
     borderColor:'red'
 
@@ -227,7 +266,7 @@ const styles = StyleSheet.create({
 },
   
 box: {
-    width: '100%',
+    width: '103%',
     height: '39%',
     padding: 10,
    borderColor: 'red'
@@ -263,7 +302,34 @@ box: {
     fontSize:20,
     fontWeight:'bold',
     fontStyle:'italic',
-    marginLeft:40
-  }
+    marginLeft:40,
+    textDecorationLine:'underline'
+  },
+  customRatingBarStyle:{
+    justifyContent:'center',
+    flexDirection:'row',
+    // marginTop:30
+
+},
+
+starImgStyle:{
+    width:40,
+    height:40,
+    resizeMode:'cover',
+//    alignItems:'flex-start'
+    // justifyContent:'space-between'
+    
+},
+
+text:{
+    fontSize:20,
+    fontWeight:'900',
+    fontStyle:'normal',
+    margin:7
+},
+textview:{
+    flexDirection:'column'
+    
+}
  
 })

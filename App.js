@@ -7,6 +7,8 @@ import Login from "./screens/Login";
 import Home from "./screens/Home";
 import Cart from "./screens/Cart";
 import Prod from "./screens/Prod";
+import bike from "./products/bike";
+import cloths from "./products/cloths";
 
 
 
@@ -23,6 +25,8 @@ export default function App() {
          <MainNavigator.Screen name="Login" component={Login}></MainNavigator.Screen>
          <MainNavigator.Screen name="Cart" component={Cart}></MainNavigator.Screen>
          <MainNavigator.Screen name="Prod" component={Prod}></MainNavigator.Screen>
+         <MainNavigator.Screen name="bike" component={bike}></MainNavigator.Screen>
+         <MainNavigator.Screen name="cloths" component={cloths}></MainNavigator.Screen>
         
         
         
