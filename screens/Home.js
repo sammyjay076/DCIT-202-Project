@@ -190,7 +190,7 @@ export default function Home({navigation}) {
                                     alignContent:'center'
                                                 }}
                                     >
-                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                                {/* <Text style={{fontSize:16, marginLeft:20}}>Buy</Text> */}
                                     </TouchableOpacity>
                                     </View>
 
