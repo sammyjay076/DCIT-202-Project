@@ -78,7 +78,7 @@ export default function Home({navigation}) {
                     {/* <View style={styles.container}>  */}
                 
                             <View style={styles.box}>
-                            <Text style={styles.heads}>Clothing</Text>
+                            <Text style={styles.heads}>Fashion</Text>
                                 <View style={styles.inner}>
                                         {/* <View style={{flex: 1, flexDirection:"row", alignItems:"center", marginLeft:100}}>
                                     <AntDesign  name="hearto" size={24} color="black" />
@@ -95,14 +95,15 @@ export default function Home({navigation}) {
                                     height:"70%",
                                     width:140,
                                     backgroundColor: "#D7CFCD"
-                                }} source={require("../assets/bikey.jpg")}>
+                                }} source={require("../assets/shoes/air_max_cover.jpg")}>
 
                                     </Image>
                                     
                                     <View style={styles.textview}>
                                     <Text style={styles.text}>
-                                      Clothing for purchase: 
+                                      Jordan Sneakers
                                     </Text>
+                                    <Text style={styles.text}>Get your Jordan Sneakers</Text>
                                     <Text style={styles.text}>purchase from the best:</Text>
                                     
                                     {/* <CustomRatingBar/> */}
@@ -142,8 +143,10 @@ export default function Home({navigation}) {
                                 </View>
                                 
                             </View>
+
+
                             <View style={styles.box}>
-                            <Text style={styles.heads}>Clothing</Text>
+                            
                                 <View style={styles.inner}>
                                         {/* <View style={{flex: 1, flexDirection:"row", alignItems:"center", marginLeft:100}}>
                                     <AntDesign  name="hearto" size={24} color="black" />
@@ -190,7 +193,894 @@ export default function Home({navigation}) {
                                     alignContent:'center'
                                                 }}
                                     >
-                                                {/* <Text style={{fontSize:16, marginLeft:20}}>Buy</Text> */}
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            
+
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
+                                    </TouchableOpacity>
+                                    </View>
+
+                                   
+
+                                    
+
+                                    {/* <View style={{flexDirection:'column'}}>
+                                    <CustomRatingBar/>
+                                    </View> */}
+                                      {/* <SafeAreaView>
+                                       
+                                        </SafeAreaView> */}
+                                </View>
+                                
+                            </View>
+                            <View style={styles.box}>
+                                <View style={styles.inner}>
+                                    
+                                       <Image  style={{
+                                            borderTopLeftRadius:30, 
+                                            borderBottomLeftRadius:30, 
+                                            borderBottomRightRadius:30,
+                                           marginTop:18,
+                                           borderTopRightRadius:30,
+                                    height:"70%",
+                                    width:140,
+                                    backgroundColor: "#D7CFCD"
+                                }} source={require("../assets/furniture/couch.jpg")}>
+
+                                    </Image>
+                                    
+                                    <View style={styles.textview}>
+                                    <Text style={styles.text}>
+                                      Clothing for purchase: 
+                                    </Text>
+                                    <Text style={styles.text}>purchase from the best:</Text>
+                                    
+                                    {/* <CustomRatingBar/> */}
+                                    <TouchableOpacity 
+                                    onPress={() => {
+                                        navigation.navigate("cloths")
+                                    }}
+                                    style={{backgroundColor:'#ebaf0c',
+                                        padding:10,
+                                    paddingHorizontal:30,
+                                    flexDirection:'row',
+                                    marginTop:40,
+                                    marginRight:10,
+                                    width:150,
+                                    height:40,
+                                    borderTopRightRadius:30, 
+                                    borderTopLeftRadius:30, 
+                                    borderBottomLeftRadius:30, 
+                                    borderBottomRightRadius:30,
+                                    alignContent:'center'
+                                                }}
+                                    >
+                                                <Text style={{fontSize:16, marginLeft:20}}>Buy</Text>
                                     </TouchableOpacity>
                                     </View>
 
@@ -325,7 +1215,7 @@ text:{
     fontSize:20,
     fontWeight:'900',
     fontStyle:'normal',
-    margin:7
+    margin:2
 },
 textview:{
     flexDirection:'column'

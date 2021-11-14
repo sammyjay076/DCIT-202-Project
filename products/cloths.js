@@ -5,7 +5,7 @@ import { useState } from "react/cjs/react.development";
 
 export default function cloths() {
     
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(0);
     const handleDecrement = () => {
         if(quantity > 1){
         setQuantity(prevCount => prevCount -1,);
@@ -18,7 +18,7 @@ export default function cloths() {
         }
     }
 
-    const [price, setPrice] = useState(250);
+    const [price, setPrice] = useState(100);
     const handlePrice = () => {
         setPrice( price => price * quantity);
     }
