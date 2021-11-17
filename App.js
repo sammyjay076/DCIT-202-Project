@@ -9,6 +9,7 @@ import Cart from "./screens/Cart";
 import Prod from "./screens/Prod";
 import bike from "./products/bike";
 import cloths from "./products/cloths";
+import bags from "./products/bags";
 
 
 
@@ -27,6 +28,7 @@ export default function App() {
          <MainNavigator.Screen name="Prod" component={Prod}></MainNavigator.Screen>
          <MainNavigator.Screen name="bike" component={bike}></MainNavigator.Screen>
          <MainNavigator.Screen name="cloths" component={cloths}></MainNavigator.Screen>
+         <MainNavigator.Screen name="bags" component={bags}></MainNavigator.Screen>
         
         
         

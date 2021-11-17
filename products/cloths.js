@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity, Image, Button, Touchable, TextInput } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity, Image, Button, Touchable, TextInput, ScrollView } from "react-native";
 import { useState } from "react/cjs/react.development";
 
 
@@ -44,8 +44,8 @@ export default function cloths() {
                             </Image>
                     </View>
 
-                    <View style={{flex:1.5, backgroundColor:'white', borderTopRightRadius:30, 
-                    borderTopLeftRadius:30, justifyContent:'space-evenly'}}>
+                    <ScrollView style={{flex:1.5, backgroundColor:'white', borderTopRightRadius:30, 
+                    borderTopLeftRadius:30,}}>
                         <Text style={{fontSize:20, fontStyle:'italic', fontWeight:'bold'}}>Description:</Text>
                         <Text style={{fontSize:15, justifyContent:'center',}}>
                             This Elegant Dress is perfectly tailored to flatter every body type. The detailed design gives it an elegant presentation 
@@ -141,7 +141,7 @@ export default function cloths() {
                                                 <Text style={{marginLeft:10}}>Add to cart</Text>
                         </TouchableOpacity>
                         
-                    </View>
+                    </ScrollView>
                 
             </View>
     );
