@@ -10,6 +10,10 @@ import Prod from "./screens/Prod";
 import bike from "./products/bike";
 import cloths from "./products/cloths";
 import bags from "./products/bags";
+import Itemcard from "./screens/Itemcard";
+import {CartProvider} from "react-use-cart"
+// import data from "./products/data";
+
 
 
 
@@ -29,6 +33,11 @@ export default function App() {
          <MainNavigator.Screen name="bike" component={bike}></MainNavigator.Screen>
          <MainNavigator.Screen name="cloths" component={cloths}></MainNavigator.Screen>
          <MainNavigator.Screen name="bags" component={bags}></MainNavigator.Screen>
+         <MainNavigator.Screen name="Itemcard" component={Itemcard}></MainNavigator.Screen>
+         <MainNavigator.Screen name="CartProvider" component={CartProvider}></MainNavigator.Screen>
+        
+        
+         {/* <MainNavigator.Screen name="data" component={data}></MainNavigator.Screen> */}
         
         
         

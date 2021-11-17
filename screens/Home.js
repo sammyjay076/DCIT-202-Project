@@ -1128,8 +1128,9 @@ export default function Home({navigation}) {
         <Ionicons name="settings" size={24} color="black" style={{marginLeft:12}} /> 
         </TouchableOpacity>
           
-                                
+                 <TouchableOpacity onPress={() => {navigation.navigate("Cart")}}>
           <Feather name="shopping-cart" size={24} color="black" style={{marginRight:12}} />
+          </TouchableOpacity>               
           </View>
         </View>
     );
