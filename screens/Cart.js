@@ -19,6 +19,9 @@ const Cart = () => {
 
     return(
         <View style={{flex:1, backgroundColor:'blue'}}>
+                <View style={{flex:1, backgroundColor:'blue'}}>
+
+                
           <View>
               <View> <Text>Cart ({totalUniqueItems}) </Text> <Text>total Items: ({totalItems}) </Text> </View>
 
@@ -64,12 +67,17 @@ const Cart = () => {
                             </View>
                    
               } )}
+              
               </View>
               </View>
           </View>
+          </View>
+
         </View>
     )
 }
 
 
 export default Cart;
+
+

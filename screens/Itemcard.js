@@ -2,13 +2,17 @@ import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Image, Button, Touchable, TextInput } from "react-native";
 import { useState } from "react/cjs/react.development";
 import white_nike_5 from '../assets/shoes/white_nike_5.jpg';
-
+import { useCart } from "react-use-cart"
+import Cart from "./Cart";
 
 
 
     
 
     const Itemcard = (props) => {
+        const {addItem} = useCart();
+
+
         return (
             <View style={{width:'100%', height:'39%', padding:10,}}>
                 {/* <Image
@@ -23,6 +27,8 @@ import white_nike_5 from '../assets/shoes/white_nike_5.jpg';
                 <Text>{props.desc}</Text>
 
                 <TouchableOpacity
+                onPress={() => {addItem(props.item)}}
+
                 style={{backgroundColor:'#ebaf0c',
                         padding:10,
                     paddingHorizontal:30,

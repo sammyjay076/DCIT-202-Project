@@ -32,7 +32,8 @@ export default function Login({navigation}) {
 
                 <View style={styles.container}>
                     {/* <Text>Enter Name:</Text> */}
-                    <TextInput placeholder='Enter Password' style={styles.input}>
+                    <Text style={{fontSize:30,}}>Chillop</Text>
+                    <TextInput placeholder='Enter Name' style={styles.input}>
 
                     </TextInput>
                 </View>
